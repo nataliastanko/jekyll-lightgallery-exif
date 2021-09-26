@@ -1,3 +1,13 @@
+*,
+:after,
+:before {
+ box-sizing: border-box;
+ background-color: inherit;
+ color: inherit;
+ margin: 0;
+ padding: 0;
+}
+
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
@@ -148,3 +158,7 @@ table td { border: 1px solid #e8e8e8; }
 .post-content h4 { font-size: 20px; }
 
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+
+.gallery img {
+  padding: 5px;
+}

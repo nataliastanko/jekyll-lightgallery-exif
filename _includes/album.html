@@ -1,9 +1,9 @@
-<div id="{{ include.album }}">
+<div class="gallery" id="{{ include.album }}">
     {%- for image in site.static_files -%}
         {%- if image.path contains 'gallery' and image.path contains include.album -%}
             {% unless image.path contains 'thumbnails' %}
-                <a href="{{ image.path | relative_url }}" data-sub-html="{% exiftag image_description, , {{ image.path }} %}">
-                    <img src="{{ image.path | prepend: 'thumbnails' | relative_url }}" alt="{{ image.path | relative_url }}"/>
+                <a href="{{ image.path | relative_url }}" data-sub-html="">
+                    <img src="{{ image.path | prepend: 'thumbnails' | relative_url }}" alt="{{ image.path | relative_url | exif: 'title' }}"/>
                 </a>
             {% endunless %}
         {%- endif -%}

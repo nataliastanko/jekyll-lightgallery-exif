@@ -17,8 +17,16 @@ gem 'webrick'
 # group :jekyll_plugins do
 # end
 
-gem "exifr"
 gem "jekyll-minimagick", github: "benubois/jekyll-minimagick", branch: "patch-1"
+# gem "exifr"
+
+# OS dependencies! https://github.com/exiftool-rb/exiftool.rb
+gem 'exiftool'
+gem 'exiftool_vendored'
+
+group :development, :test do
+  gem 'pry'
+end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

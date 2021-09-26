@@ -1,6 +1,6 @@
 # Gallery
 
-lightgallery with jekyll
+lightgallery with jekyll and minimagick, reading exiftag
 
 # run
     bundle install
