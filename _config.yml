@@ -1,0 +1,34 @@
+author: Natalia Stanko
+email: cranberrycode@gmail.com
+title: Galleries
+description: >- # this means to ignore newlines until "baseurl:"
+  Galleries
+baseurl: ""
+url: ""
+
+collections:
+  pages:
+    output: true
+
+mini_magick:
+  thumbnails:
+    source: gallery
+    destination: thumbnails/gallery
+    resize: "320x240^"
+    gravity: "center"
+    extent: "320x240"
+
+exclude:
+  - README.md
+  - .jekyll-cache/
+  - .vscode
+  - .rspec
+  - .ruby-version
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
